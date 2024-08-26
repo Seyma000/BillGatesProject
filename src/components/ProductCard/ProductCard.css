@@ -1,0 +1,101 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+/* Product Card Styles */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; 
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 0; 
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.product-card p {
+    margin: 0; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card img {
+    width: 100%; 
+    height: auto;
+    max-height: 150px; 
+    object-fit: contain; 
+    margin-bottom: 10px;
+}
+
+.product-card .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 1rem;
+}
+
+.product-card button,
+.product-card input {
+    flex: 1; 
+    height: 40px; 
+    box-sizing: border-box; 
+}
+
+.product-card button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+}
+
+/* Specific styling for the Sell button */
+.product-card button:first-of-type {
+    background: linear-gradient(to bottom, #ccc, #ccc); 
+}
+
+.product-card button:first-of-type:enabled {
+    background: linear-gradient(to bottom, #e85eca, #e432d5); 
+}
+
+/* Specific styling for the Buy button */
+.product-card button:last-of-type {
+    background: linear-gradient(to bottom, #2cca77, #1dbf95); 
+}
+
+/* Disabled button styling */
+.product-card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.product-card input {
+    width: 100%; 
+    height: 40px;
+    border: 0.1em solid rgb(81, 81, 81);
+    background-color: white;
+    text-align:center; 
+}
